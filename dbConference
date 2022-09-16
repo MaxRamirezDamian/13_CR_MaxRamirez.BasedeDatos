@@ -1,0 +1,20 @@
+
+--Crear Base de Datos
+CREATE DATABASE PetHappydb
+GO
+--Usar Base de Datos
+USE PetHappydb
+GO
+
+-- Table: CLIENTE
+CREATE TABLE CLIENTE (
+    IDCLI int IDENTITY(1,1),
+    NOMCLI varchar(60),
+    APECLI varchar(60),
+    DNICLI char(8),
+    EMACLI varchar(90),
+    DIRCLI varchar(90),
+    CELCLI char(9),
+    CONSTRAINT CLIENTE_pk PRIMARY KEY (IDCLI)
+)
+GO
